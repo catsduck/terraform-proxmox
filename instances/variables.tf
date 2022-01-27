@@ -1,0 +1,9 @@
+variable "cpu_cores" {}
+variable "description" {}
+variable "disk_size" {}
+variable "memory" {}
+variable "name" {}
+variable "network_bridge" {}
+variable "ssh_key_path" {}
+variable "target_node" {}
+variable "vm_template_name" {}
