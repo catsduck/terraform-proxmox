@@ -1,7 +1,7 @@
 module "instances_ubuntu" {
   source           = "./instances"
   count            = 3
-  name             = "ubuntu-${count.index + 1}"
+  name             = "ubuntu${count.index + 1}"
   description      = "Instance created via Terraform"
   target_node      = local.proxmox_node
   vm_template_name = "ubuntu-base"
