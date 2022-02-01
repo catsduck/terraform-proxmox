@@ -26,8 +26,7 @@ resource "proxmox_vm_qemu" "vm" {
   provisioner "remote-exec" {
     inline = [
       "sudo hostnamectl set-hostname ${var.name}",
-      "sudo dhclient -r",
-      "sudo dhclient"
+      "sudo netplan apply"
     ]
   }
 }
