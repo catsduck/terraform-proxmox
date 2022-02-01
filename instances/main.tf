@@ -19,7 +19,7 @@ resource "proxmox_vm_qemu" "vm" {
 
   connection {
     type        = "ssh"
-    user        = "terraform"
+    user        = "ubuntu"
     private_key = file(var.ssh_key_path)
     host        = self.default_ipv4_address
   }
